@@ -1,0 +1,565 @@
+<!-- website created by: Rory Sargentson 2021. -->
+<!doctype html>
+<html lang=en>
+
+<head>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Npower-Campaign-Rory-Sargentson">
+    <link rel=icon href=img/np-brand/np-initials.png>
+    <!--Typeface-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!--Google Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--BS4 / JS-->
+    <link href=https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css rel=stylesheet integrity=sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6 crossorigin=anonymous>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src=https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js integrity=sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf crossorigin=anonymous></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--End BS4 / JS-->
+    <!--barba js -->
+    <!-- unpkg -->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <!-- jsdelivr -->
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <script src=js/snap-scroll.js></script>
+    <!--AOS-->
+    <link href="js/manifest.json" rel="manifest">
+    <link rel=stylesheet href=https://unpkg.com/aos@next/dist/aos.css/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--End AOS-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
+    <title>Npower • Save Energy</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/np-brand/np-logo.png" alt="Logo" style="width:10vh;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav container r-auto mt-2 mt-lg-0 ">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="save-nrg.html" class="current">Save Energy</a></li>
+                <li><a href="whynpower.html">Why Npower</a></li>
+                <li><a href="contact.html">Connect</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="dropup-button">
+        <!-- chat bot button section -->
+        <button class="chatbot-btn btn btn-secondary dropup-toggle" style="width:10vh;" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="headset-icon material-icons">headset_mic</span>
+      </button>
+        <div class="dropdown-menu container-fluid">
+            <button class="dropdown-item" style="height:6vh;" type="button">Help Bot<img src="img/icon/question.png" class="chat-bot-icons" alt="chat" style="width:2vh;"></button>
+            <div class="dropdown-divider"></div>
+            <button class="dropdown-item" style="height:6vh;" type="button">Call Us<img src="img/icon/phone.png" class="chat-bot-icons" alt="phone" style="width:2vh;"></button>
+            <div class="dropdown-divider"></div>
+            <button class="dropdown-item" style="height:6vh;" type="button">Pay a Bill<img src="img/icon/credit-card.png" class="chat-bot-icons" alt="credit-card" style="width:2vh;"></button>
+        </div>
+    </div>
+
+    <main>
+        <header>
+            <section class="section1 header-top save-nrg-bg">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <h1 data-aos="fade-right" data-aos-duration="900">Energy schemes can be a little confusing. </h1><br />
+                            <h2 data-aos="fade-right" data-aos-duration="1200">So we decided to make it easy for you to check your elegibility and find the right one for you.</h2>
+                            <a class="button-top lets-start btn" href="#eligibility-checker" role="button">Let's start!</a>
+                        </div>
+                        <div class="col">
+                            <!-- img goes here -->
+                        </div>
+                    </div>
+                </div>
+                <a href="#elegibility">
+                    <img src="img/icon/arrow-down.png" class="down-arrow justify-content-center" alt="down-arrow" style="width:5vh; height:5vh;" />
+                </a>
+                <!--down arrow-->
+
+            </section>
+        </header>
+
+        <!-- start section eligibility -->
+        <section class="elegibility container-fluid" id="elegibility">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <h1 data-aos="fade-right" data-aos-duration="900" id="eligibility-checker">Npower eligibility finder.</h1><br/>
+                        <h2>Please select a category that suits your situation.</h2>
+                    </div>
+                    <!-- start eligibility cards section -->
+                    <div class="pricing-area pt-100 pb-100" id="pricing">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xl-8 mx-auto text-center">
+                                </div>
+                            </div>
+                            <div class="row" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="col-xl-4">
+                                    <div class="single-price">
+                                        <div class="price-title">
+                                            <h4>Family Household</h4>
+                                        </div>
+                                        <div class="price-tag center">
+                                            <h6>New or seasoned family with children</h6>
+                                        </div>
+                                        <div class="price-item">
+                                            <ul>
+                                                <li>ECO Scheme<img src="img/icon/tick-white.png" alt="tick-mark" style="width: 3vh; padding-left: 0.5vh; padding-bottom: 0.5vh;" />
+                                                    <button type="button" class="btn more-info-button" data-toggle="collapse" data-target="#demo1" style="margin-left: 50%; margin-bottom: 0.5vh;">Info
+  </button>
+                                                    <div id="demo1" class="collapse text-left">
+                                                        <p>
+                                                            You family qualifies for free home energy improvements under the Energy Company Obligation (ECO) scheme based on: Your property type. The government benefits you or someone in your home receives. You can see if you qualify under the government's Energy Company Obligation (ECO) scheme by completing our online application form.
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <li>Free Boiler<img src="img/icon/tick-white.png" alt="tick-mark" style="width: 3vh; padding-left: 0.5vh; padding-bottom: 0.5vh;" />
+                                                    <button type="button" class="btn more-info-button" data-toggle="collapse" data-target="#demo2" style="margin-left: 52%; margin-bottom: 0.5vh;">Info
+</button>
+                                                    <div id="demo2" class="collapse text-left">
+                                                        <p>
+                                                            Your familiy can apply for a new and free boiler to be installed in you family home. New boilers are more efficient and work smarter to keep water constantly hot.
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <li>Wall insulation<img src="img/icon/tick-white.png" alt="tick-mark" style="width: 3vh; padding-left: 0.5vh; padding-bottom: 0.5vh;" />
+                                                    <button type="button" class="btn more-info-button" data-toggle="collapse" data-target="#demo3" style="margin-left: 48%; margin-bottom: 0.5vh;">Info
+</button>
+                                                    <div id="demo3" class="collapse text-left">
+                                                        <p>
+                                                            More than a third of all heat lost in uninsulated homes escapes through external walls. Insulate your cavity walls for free and save up to £275 a year.
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <li>Energy Fund<img src="img/icon/tick-white.png" alt="tick-mark" style="width: 3vh; padding-left: 0.5vh; padding-bottom: 0.5vh;" />
+                                                    <button type="button" class="btn more-info-button" data-toggle="collapse" data-target="#demo10" style="margin-left: 51%; margin-bottom: 0.5vh;">Info
+</button>
+                                                    <div id="demo10" class="collapse text-left">
+                                                        <p>
+                                                            The aim of the npower Energy Fund is to help domestic customers of npower who are experiencing hardship through Support through grants to pay their gas and electricity bills, regain a hold on their finances and become financially stable with the ability to meet future bills</p>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <a href="" class="box-btn">Select</a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="single-price">
+                                        <div class="price-title">
+                                            <h4>Couples & Homeowners</h4>
+                                        </div>
+                                        <div class="price-tag center">
+                                            <h6>Commited partners taking the next steps</h6>
+                                        </div>
+                                        <div class="price-item">
+
+                                            <ul>
+                                                <li>ECO Scheme<img src="img/icon/tick-white.png" alt="tick-mark" style="width: 3vh; padding-left: 0.5vh; padding-bottom: 0.5vh;" />
+                                                    <button type="button" class="btn more-info-button" data-toggle="collapse" data-target="#demo4" style="margin-left: 50%; margin-bottom: 0.5vh;">Info
+</button>
+                                                    <div id="demo4" class="collapse text-left">
+                                                        <p>
+                                                            You and your partner qualify for free home energy improvements under the Energy Company Obligation (ECO) scheme based on: Your property type. The government benefits you or someone in your home receives. You can see if you qualify under the government's Energy Company Obligation (ECO) scheme by completing our online application form.
+
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <li>Free Boiler<img src="img/icon/tick-white.png" alt="tick-mark" style="width: 3vh; padding-left: 0.5vh; padding-bottom: 0.5vh;" />
+                                                    <button type="button" class="btn more-info-button" data-toggle="collapse" data-target="#demo5" style="margin-left: 52%; margin-bottom: 0.5vh;">Info
+</button>
+                                                    <div id="demo5" class="collapse text-left">
+                                                        <p>
+                                                            You and your partner can apply for a new and free boiler to be installed in you family home. New boilers are more efficient and work smarter to keep water constantly hot.
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <li>Kick-starter<img src="img/icon/tick-white.png" alt="tick-mark" style="width: 3vh; padding-left: 0.5vh; padding-bottom: 0.5vh;" />
+                                                    <button type="button" class="btn more-info-button" data-toggle="collapse" data-target="#demo6" style="margin-left: 51%; margin-bottom: 0.5vh;">Info
+</button>
+                                                    <div id="demo6" class="collapse text-left">
+                                                        <p>
+                                                            You and you partner are eligibile for a 3 monthly payment of £400 on us, for starting your eco home journey. This is our promise for ensuring our commitment to maintain environmental sustainabilty.
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <li>Energy Fund<img src="img/icon/tick-white.png" alt="tick-mark" style="width: 3vh; padding-left: 0.5vh; padding-bottom: 0.5vh;" />
+                                                    <button type="button" class="btn more-info-button" data-toggle="collapse" data-target="#demo11" style="margin-left: 50%; margin-bottom: 0.5vh;">Info
+</button>
+                                                    <div id="demo11" class="collapse text-left">
+                                                        <p>
+                                                            The aim of the npower Energy Fund is to help domestic customers of npower who are experiencing hardship through Support through grants to pay their gas and electricity bills, regain a hold on their finances and become financially stable with the ability to meet future bills</p>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <a href="" class="box-btn">Select</a>
+
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="single-price">
+                                        <div class="price-title">
+                                            <h4>Pensioners</h4>
+                                        </div>
+                                        <div class="price-tag center">
+                                            <h6>Securing a retirement, full of rewards and services</h6>
+                                        </div>
+                                        <div class="price-item">
+
+                                            <ul>
+                                                <li>ECO Scheme<img src="img/icon/tick-white.png" alt="tick-mark" style="width: 3vh; padding-left: 0.5vh; padding-bottom: 0.5vh;" />
+                                                    <button type="button" class="btn more-info-button" data-toggle="collapse" data-target="#demo12" style="margin-left: 50%;margin-bottom: 0.5vh;">Info
+  </button>
+                                                    <div id="demo12" class="collapse text-left">
+                                                        <p>
+                                                            You qualify for free home energy improvements under the Energy Company Obligation (ECO) scheme based on: Your property type. The government benefits you or someone in your home receives. You can see if you qualify under the government's Energy Company Obligation (ECO) scheme by completing our online application form.
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <li>Free Boiler<img src="img/icon/tick-white.png" alt="tick-mark" style="width: 3vh; padding-left: 0.5vh; padding-bottom: 0.5vh;" />
+                                                    <button type="button" class="btn more-info-button" data-toggle="collapse" data-target="#demo13" style="margin-left: 53%; margin-bottom: 0.5vh;">Info
+  </button>
+                                                    <div id="demo13" class="collapse text-left">
+                                                        <p>
+                                                            You are able to apply for a new and free boiler to be installed in you family home. New boilers are more efficient and work smarter to keep water constantly hot.
+                                                        </p>
+
+                                                    </div>
+                                                </li>
+
+                                                <li>Floor insulation<img src="img/icon/tick-white.png" alt="tick-mark" style="width: 3vh; padding-left: 0.5vh; padding-bottom: 0.5vh;" />
+                                                    <button type="button" class="btn more-info-button" data-toggle="collapse" data-target="#demo14" style="margin-left: 48%; margin-bottom: 0.5vh;">Info
+  </button>
+                                                    <div id="demo14" class="collapse text-left">
+                                                        <p>
+                                                            Apply today for a free floor insulation that is placed underneath your floorboards and or carpet, which blocks out harsh cold tempatures and blistering heat during the seasonal peaks.
+                                                    </div>
+                                                </li>
+
+                                                <li>Socket timers<img src="img/icon/tick-white.png" alt="tick-mark" style="width: 3vh; padding-left: 0.5vh; padding-bottom: 0.5vh;" />
+                                                    <button type="button" class="btn more-info-button" data-toggle="collapse" data-target="#demo15" style="margin-left: 50%; margin-bottom: 0.5vh;">Info
+  </button>
+                                                    <div id="demo15" class="collapse text-left">
+                                                        <p>
+                                                            Wall socket timers are avaiable and are free (including free postage), which reduced any excessive enery expenditure.
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <a href="" class="box-btn">Select</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end container fluid -->
+
+            <!--Modal: Login / Register Form reprouced from https://mdbootstrap.com/docs/b4/jquery/modals/forms/-->
+            <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog">
+                <div class="modal-dialog cascading-modal" role="document">
+                    <!--Content-->
+                    <div class="modal-content">
+
+                        <div class="modal-c-tabs">
+
+                            <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+                          Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
+                          Register</a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <!--Panel 7-->
+                                <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+                                    <!--Body-->
+                                    <div class="modal-body mb-1">
+                                        <div class="md-form form-sm mb-5">
+                                            <i class="fas fa-envelope prefix"></i>
+                                            <input type="email" id="modalLRInput10" class="form-control form-control-sm validate" placeholder="Your Email">
+                                        </div>
+
+                                        <div class="md-form form-sm mb-4">
+                                            <i class="fas fa-lock prefix"></i>
+                                            <input type="password" id="modalLRInput11" class="form-control form-control-sm validate" placeholder="Your Password">
+                                        </div>
+                                        <div class="text-center mt-2">
+                                            <button class="btn" style="background-color: #4361ee; color: #fff;">Log in <i class="fas fa-sign-in ml-1"></i></button>
+                                        </div>
+                                    </div>
+                                    <!--Footer-->
+                                    <div class="modal-footer">
+                                        <div class="options text-center text-md-right mt-1">
+                                            <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                                            <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                                        </div>
+                                        <button type="button" class="btn waves-effect ml-auto" style="background-color: #F7254D; color: #fff;" data-dismiss="modal">Close</button>
+                                    </div>
+
+                                </div>
+                                <!--/.Panel 7-->
+
+                                <!--Panel 8-->
+                                <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+                                    <!--Body-->
+                                    <div class="modal-body">
+                                        <div class="md-form form-sm mb-5">
+                                            <i class="fas fa-envelope prefix"></i>
+                                            <input type="email" id="modalLRInput12" class="form-control form-control-sm validate" placeholder="Your Email">
+                                        </div>
+
+                                        <div class="md-form form-sm mb-5">
+                                            <i class="fas fa-lock prefix"></i>
+                                            <input type="password" id="modalLRInput13" class="form-control form-control-sm validate" placeholder="Your Password">
+                                        </div>
+
+                                        <div class="md-form form-sm mb-4">
+                                            <i class="fas fa-lock prefix"></i>
+                                            <input type="password" id="modalLRInput14" class="form-control form-control-sm validate" placeholder="Repeat Password">
+                                        </div>
+
+                                        <div class="text-center form-sm mt-2">
+                                            <button class="btn" style="background-color: #4361ee; color: #fff;">Sign up <i class="fas fa-sign-in ml-1"></i></button>
+                                        </div>
+
+                                    </div>
+                                    <!--Footer-->
+                                    <div class="modal-footer">
+                                        <div class="options text-right">
+                                            <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+                                        </div>
+                                        <button type="button" class="btn waves-effect ml-auto" style="background-color: #F7254D; color: #fff;" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Modal: Login / Register Form-->
+
+            <div class="login-text text-center container" data-aos="fade-right" data-aos-duration="1200">
+                <h2>We are ready when you are.</h2>
+                <br />
+                <button class="btn button-modal container" data-toggle="modal" data-target="#modalLRForm">Sign me up!</button>
+            </div>
+
+        </section>
+        <!-- end section 2 -->
+
+        <!-- start section 3 -->
+        <section class="section3 energy-list container-fluid">
+            <h1 data-aos="fade-right" data-aos-duration="900">Couldn't find your elegibility? </h1><br />
+            <h2 data-aos="fade-right" data-aos-duration="1200">No worries, here is an intelligent list of ways you can save energy at home.</h2>
+
+            <div class="energy-cards d-flex justify-content-between container">
+
+                <div class="card energy-card" style="width: 18rem;" data-aos="fade-down" data-aos-duration="1200">
+                    <img src="img/icon/bulb.png" alt="light-bulb" class="d-flex align-self-center" style="width: 3.5vh; margin-bottom: 1vh; margin-top: 0.5vh;" />
+                    <h4 class="text-center">Energy Efficient Light Bulbs</h4>
+                    <div class="card-body">
+                        <p class="card-text">When possible, change all your light bulbs to Halogen, which will reduce energy usage and will add 15% more brightness to your home.</p>
+                    </div>
+                </div>
+                <br />
+                <div class="card energy-card" style="width: 18rem;" data-aos="fade-down" data-aos-duration="1800">
+                    <img src="img/icon/coffee.png" alt="coffee-appliance" class="d-flex align-self-center" style="width: 3.5vh; margin-bottom: 1vh; margin-top: 0.5vh;" />
+                    <h4 class="text-center">Minimal Appliance Usage</h4>
+                    <div class="card-body">
+                        <p class="card-text">Cutting down on using energy hungry appliances will help reduce monthly costs. Try making your cuppa by using gas instead of eletricity.</p>
+                    </div>
+                </div>
+                <br />
+                <div class="card energy-card" style="width: 18rem;" data-aos="fade-down" data-aos-duration="2000">
+                    <img src="img/icon/game-off.png" alt="gaming-console" class="d-flex align-self-center" style="width: 3.5vh; margin-bottom: 1vh; margin-top: 0.5vh;" />
+                    <h4 class="text-center">Limit Gaming Time</h4>
+                    <div class="card-body">
+                        <p class="card-text">Games chew up a lot of energy, especially online gaming. We reccomend going outside to play and laying off Fortnite for a Fortnight.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="energy-cards d-flex justify-content-between container" data-aos="fade-up" data-aos-duration="1200">
+                <div class="card energy-card" style="width: 18rem;">
+                    <img src="img/icon/sunny.png" alt="sunny" class="d-flex align-self-center" style="width: 3.5vh; margin-bottom: 1vh; margin-top: 0.5vh;" />
+                    <h4 class="text-center">Sun & Solar</h4>
+                    <div class="card-body">
+                        <p class="card-text">Harvest the sun's powerful rays to dry your clothes, grow your plants and charge your house or smart devices through solar collection.</p>
+                    </div>
+                </div>
+                <br />
+                <div class="card energy-card" style="width: 18rem;" data-aos="fade-up" data-aos-duration="1800">
+                    <img src="img/icon/outlet.png" alt="wall-outlet" class="d-flex align-self-center" style="width: 3.5vh; margin-bottom: 1vh; margin-top: 0.5vh;" />
+                    <h4 class="text-center">Unplug Unsused Utilities</h4>
+                    <div class="card-body">
+                        <p class="card-text">All appliances have a 'soft on' when plugged in, meaning they will still draw power from time to time.</p>
+                    </div>
+                </div>
+                <br />
+                <div class="card energy-card" style="width: 18rem;" data-aos="fade-up" data-aos-duration="2000">
+                    <img src="img/icon/psychology.png" alt="psychology" class="d-flex align-self-center" style="width: 3.5vh; margin-bottom: 1vh; margin-top: 0.5vh;" />
+                    <h4 class="text-center">Behavior & Attitude</h4>
+                    <div class="card-body">
+                        <p class="card-text">Personal choices can effect how you conserve energy and save money in the long run.<br /> Remember, the power is in your hands.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- start footer content -->
+        <footer class="footer text-center container-fluid">
+            <div class="container p-4">
+                <div class="row">
+
+                    <div class="newsletter justify-content-center">
+                        <form action="https://www.hertfordshiremercury.co.uk/news/hertfordshire-news/british-gas-npower-edf-one-5060954">
+                            <div class="row justify-content-center">
+
+                                <div class="col-md-5 col-12">
+                                    <div class="form-outline form-white mb-4">
+                                        <input type="email" id="email" class="form-control" placeholder="Sign up for our newsletter" />
+                                    </div>
+                                </div>
+
+                                <div class="col-auto">
+
+                                    <button type="submit" class="submit-button btn mb-4">
+                  Subscribe
+                </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-sm">
+                        <h5 class="text-uppercase">Privacy</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="https://www.npower.com/help-and-support/electricity-and-gas-tariffs/standards-of-conduct/" class="text-white">Standards of Conduct</a>
+                            </li>
+                            <li>
+                                <a href="https://www.npower.com/about-npower/privacy-policy/" class="text-white">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="https://www.npower.com/about-npower/cookies/" class="text-white">Cookies</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm">
+                        <h5 class="text-uppercase">Business</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="https://www.npower.com/npower-and-eon/" class="text-white">E.ON Updates</a>
+                            </li>
+                            <li>
+                                <a href="https://www.indeed.com/q-Enology-jobs.html" class="text-white">Careers</a>
+                            </li>
+                            <li>
+                                <a href="https://www.npower.com/business-solutions/" class="text-white">Business Solutions</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm">
+                        <h5 class="text-uppercase ">Website</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="https://www.npower.com/site-map/" class="text-white">Sitemap</a>
+                            </li>
+                            <li>
+                                <a href="https://www.npower.com/about-npower/accessibility/" class="text-white">Accessibility</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Credits</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--  <div class="footer-legal col-md">
+                            <h5 class=" text-uppercase">Legal</h5>
+                            <p>
+                              DIG32 A3 Website Author: Rory Sargentson. Curtin University, 2020.<br>
+                                This website has been created as part of an assignment in an approved course of study for Curtin University and contains copyright material not created by the author.
+                                All copyright material used remains copyright of the respective owners and has
+                                been used here pursuant to Section 40 of the Copyright Act 1968 (Commonwealth of Australia).
+                                No part of this work may be reproduced without consent of the original copyright owners.
+                                See code comments for references.
+                            </p>
+
+                        </div>-->
+                </div>
+
+            </div>
+
+        </footer>
+        <!-- MDBootstrap. 2021. "MDBootstrap footer generator". MDBootstrap. https://mdbootstrap.com/docs/standard/tools/builders/footer/? -->
+
+        <!-- end section 4 -->
+
+    </main>
+</body>
+<script>
+    // start animate on scroll
+      AOS.init();
+
+      barba.init({
+        // ...
+      })
+      // start snap scroll
+      //var snapScroll = $("header, section").SnapScroll({
+        //hashes:true
+      //});
+      //console.log(snapScroll);
+      function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+</html>
+
+<!--DIG32 A3  "Npower brief" Website Author: Rory Sargentson. Curtin University, 2020.
+  This website has been created as part of an assignment in an approved course of study for Curtin University and contains copyright material not created by the author.
+  All copyright material used remains copyright of the respective owners and has
+  been used here pursuant to Section 40 of the Copyright Act 1968 (Commonwealth of Australia).
+  No part of this work may be reproduced without consent of the original copyright owners.
+  See code comments for references. -->

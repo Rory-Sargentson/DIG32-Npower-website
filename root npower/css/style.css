@@ -1,0 +1,988 @@
+/* Npower website created by: Rory Sargentson 2021. PRIMARY COLORS #F7254D Red Crayola #480ca8 Trypan Blue #3a0ca3 Darker Trypan Blue #3f37c9 Persian Blue #4361ee Ultramarine Blue */
+ *{
+     box-sizing: border-box;
+     margin: 0;
+     transition: all 0.3s;
+}
+ html{
+     scroll-behavior: smooth;
+}
+ body{
+     min-height: 100vh;
+     width: 100%;
+     margin: 0 auto;
+     background-color: #3f37c9;
+     line-height: 1.6;
+     -webkit-font-smoothing: antialiased;
+     -webkit-text-size-adjust: 100%;
+     color: #FFF;
+}
+ body h1,h2,h3,h4,h5{
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 500;
+}
+ body p, li, ul, a{
+     font-family: 'Hind', sans-serif;
+}
+ section{
+     height: 100vh;
+}
+body hr{
+color: #fff;
+}
+ .material-icons {
+     font-family: 'Material Icons';
+     font-weight: normal;
+     font-style: normal;
+     font-size: 24px;
+    /* Preferred icon size */
+     display: inline-block;
+     line-height: 1;
+     text-transform: none;
+     letter-spacing: normal;
+     word-wrap: normal;
+     white-space: nowrap;
+     direction: ltr;
+    /* Support for all WebKit browsers. */
+     -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+     text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+     -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+     font-feature-settings: 'liga';
+}
+ span {
+    /* icon styling */
+     position: relative;
+     top: 6px;
+     right: 1vh;
+}
+ ::selection {
+     background-color: #000;
+     color: #fff;
+}
+ .navbar{
+     position: fixed;
+     top: 0;
+     width: 100%;
+     overflow: scroll;
+     background-color: #3a0ca3;
+     color: #FFF;
+     z-index: 1;
+}
+ .navbar a{
+     text-decoration: none;
+     padding-left: 5vh;
+     font-size: 12pt;
+     color: #FFF;
+}
+ .current{
+     font-weight: bold;
+}
+/* Button used to open the chat form - fixed at the bottom of the page */
+ .dropup-button {
+     display: block;
+     float: right;
+     color: white;
+     border: none;
+     cursor: pointer;
+     position: fixed;
+     right: 0;
+     padding-right: 8vh;
+     bottom: 5vh;
+     transition: all 0.3s;
+     z-index: 1;
+     text-align: center;
+}
+ .chatbot-btn{
+    /* links to new page */
+     border-radius: 30px;
+     background-color: #F7254D;
+     margin-left: 10vh;
+     font-size: 16pt;
+     text-decoration: none;
+     z-index: 1;
+     text-align: center;
+}
+ .headset-icon{
+     display: block;
+     width: 100%;
+     font-size: 25pt;
+     left: 0;
+     top: 0;
+     margin: auto;
+     position: relative;
+     align-items: center;
+     justify-content: center;
+     z-index: 1;
+}
+ .dropdown-item{
+     text-align: center;
+}
+ .chat-bot-icons{
+     margin-left: 3vh;
+}
+ .dropdown-menu{
+     z-index: 1;
+     overflow: hidden;
+     border-radius: 50px;
+     margin-right: 10px;
+     box-shadow: -5px -5px 40px #000;
+}
+/* end chat bot */
+/* header section */
+ .top-header-section{
+     background-image: url("../img/bg/solar.jpg");
+    /* Figure 1. Lincoln Electric Systems. 2017. "Solar panels under blue sky photo." Digital Photo. Unsplash. https://unsplash.com/photos/XGAZzyLzn18 */
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: center;
+}
+ .section1{
+}
+ .header-top h1{
+     font-size: 55pt;
+     margin-top: 25vh;
+     margin-left: 12vh;
+     float: left;
+}
+ .header-top h2{
+     font-size: 25pt;
+     margin-top: 2vh;
+     margin-left: 12vh;
+     float: left;
+}
+ .button-top{
+    /* links to new page */
+     width: 30vh;
+     border-radius: 60px;
+     background-color: #F7254D;
+     color: #FFF;
+     margin-top: 15vh;
+     margin-left: 15vh;
+     font-size: 16pt;
+}
+.discover-btn{
+  /* links to new page */
+   width: 35vh;
+   border-radius: 60px;
+   background-color: #F7254D;
+   color: #FFF;
+   margin-top: 15vh;
+   margin-left: 15vh;
+   font-size: 16pt;
+}
+.lets-start{
+  /* links to new page */
+   width: 18vh;
+   border-radius: 60px;
+   background-color: #F7254D;
+   color: #FFF;
+   margin-top: 15vh;
+   margin-left: 15vh;
+   font-size: 16pt;
+}
+ .down-arrow{
+     display: block;
+     margin-top: 15vh;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+     animation: bounce 1s infinite alternate;
+     -webkit-animation: bounce 0.5s infinite alternate;
+}
+/* sun icon */
+ .sun-icon{
+     margin-top: 12vh;
+     margin-right: 18vh;
+     float: right;
+}
+.thinking-icon{
+    margin-top: 12vh;
+    margin-right: 18vh;
+    float: right;
+}
+.family-icon{
+    margin-top: 12vh;
+    margin-right: 18vh;
+    float: right;
+}
+ .sun{
+     border: 2px solid #999;
+     animation: bounce 1s infinite alternate;
+     -webkit-animation: bounce 1s infinite alternate;
+}
+ @keyframes bounce {
+     from {
+         transform: translateY(0px);
+    }
+     to {
+         transform: translateY(-15px);
+    }
+}
+ @-webkit-keyframes bounce {
+     from {
+         transform: translateY(0px);
+    }
+     to {
+         transform: translateY(-15px);
+    }
+}
+ .link-button{
+     display: block;
+     width: 20%;
+}
+/* end header section */
+/* start section 2 */
+ .awards-section{
+     background-color: #F7254D;
+     height: 110vh;
+}
+ .section2 h1{
+     font-size: 40pt;
+     margin-top: 25vh;
+     margin-left: 12vh;
+     float: left;
+}
+ .section2 h3{
+     padding-left: 12vh;
+     margin-top: 45vh;
+     width: 100%;
+     font-weight: 400;
+     line-height: 4vh;
+}
+ .section2 p{
+     font-size: 20pt;
+     margin-top: 10vh;
+     margin-left: 12vh;
+     float: left;
+}
+ .section2 ul{
+     margin-top: 25vh;
+     align-content: center;
+     list-style-type: none;
+     font-size: 25pt;
+     border-radius: 50px;
+     background: linear-gradient(45deg, #433bd7, #3932b5);
+     box-shadow: 20px -20px 60px #362fab, -20px 20px 60px #483fe7;
+     z-index: -1;
+}
+ .section2 span{
+     font-size: 8vh;
+     top: 2vh;
+     text-decoration: none;
+}
+ .button-2{
+    /* links to new page */
+     width: 26vh;
+     display: block;
+     border-radius: 60px;
+     background-color: #F7254D;
+     box-shadow: -25px 25px 65px #362fab, 20px -20px 60px #483fe7;
+     color: #FFF;
+     margin-top: 15vh;
+     margin-left: 30vh;
+     font-size: 16pt;
+}
+ @-webkit-keyframes AnimationName {
+     0%{
+        background-position:0% 47%
+    }
+     50%{
+        background-position:100% 54%
+    }
+     100%{
+        background-position:0% 47%
+    }
+}
+ @keyframes AnimationName {
+     0%{
+        background-position:0% 47%
+    }
+     50%{
+        background-position:100% 54%
+    }
+     100%{
+        background-position:0% 47%
+    }
+}
+/* start section 3 */
+ .section3{
+}
+ .awards-section{
+     background-color: #F7254D;
+     height: 110vh;
+}
+ .section3 h1{
+     font-size: 40pt;
+     margin-top: 15vh;
+     text-align: center;
+}
+ .section3 h2{
+     font-size: 20pt;
+     margin-top: 2vh;
+     padding-bottom: 6vh;
+     text-align: center;
+}
+ .card-container{
+     margin-top: -5vh;
+}
+ .card-award{
+     background: #4361ee;
+     box-shadow: 5px 5px 10px #b21b37, -5px -5px 10px #ff2f63;
+     display: grid;
+     margin: auto;
+     margin-top: 1.5vh;
+     width: 100%;
+}
+ .card-award h5{
+     font-size: 20pt;
+     line-height: 3vh;
+}
+ .award-icon-side{
+     font-size: 200pt;
+     float: left;
+     display: block;
+     margin-right: 0;
+     padding-right: 0;
+     z-index: -1;
+}
+ .award-icon{
+     font-size: 30pt;
+}
+/* end section 3 */
+/* start section 4 */
+ .section4{
+     height: 55vh;
+}
+ .section4 h1{
+     font-size: 40pt;
+     margin-top: 12vh;
+     margin-left: 8vh;
+     float: left;
+}
+ .section4 p{
+     padding-left: 19vh;
+     margin-top: 5vh;
+     width: 50%;
+     font-size: 20pt;
+     font-weight: 400;
+     line-height: 4vh;
+     padding-bottom: 2vh;
+     float: left;
+}
+ .button-last{
+    /* check now! */
+     display: flex;
+     align-items: center;
+     width: 14vh;
+     margin-top: 19vh;
+     border-radius: 60px;
+     background-color: #F7254D;
+     box-shadow: -25px 25px 65px #362fab, 20px -20px 60px #483fe7;
+     color: #FFF;
+     font-size: 16pt;
+}
+ .icon-row{
+     justify-content: center;
+     display: flex;
+     margin: 5vh;
+     padding-left: 90px;
+}
+/* END HOME PAGE */
+
+/*start elegibility section */
+ .save-nrg-bg{
+     background-image: url("../img/bg/wind.jpg");
+    /* Figure 2. Jayson Blackeye. 2017. "Wind turbines on snowy mountain under clear blue sky." Digital Photo. Unsplash. https://unsplash.com/photos/nyL-rzwP-Mk */
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: center;
+}
+ .elegibility{
+     height: 150vh;
+}
+ .elegibility h1{
+   margin-top: 15vh;
+     text-align: center;
+     justify-content: center;
+     display: block;
+}
+ .elegibility h2,h3{
+     text-align: center;
+}
+ .elegibility p{
+     font-size: 12pt;
+}
+.pb-100 {
+	padding-bottom: 10vh;
+}
+.section-title h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #777;
+}
+.section-title h2 {
+	font-size: 32px;
+	text-transform: capitalize;
+	margin: 15px 0;
+	display: inline-block;
+	position: relative;
+	font-weight: 700;
+	padding-bottom: 15px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.section-title p {
+	font-weight: 300;
+	font-size: 14px;
+}
+.black-bg .section-title h2, .black-bg .section-title h4, .black-bg .section-title p {
+  color:#fff
+}
+
+.section-title {
+  margin-bottom: 70px;
+}
+.pricing-area{
+  margin-top: 10vh;
+}
+.single-price {
+	text-align: center;
+  background-color: #1C2759;
+	padding: 30px;
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+.price-title h4 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.price-tag {
+  margin: 30px 0;
+}
+.price-tag {
+	margin: 30px 0;
+	background-color: #fafafa;
+	color: #000;
+	padding: 10px 0;
+}
+.center.price-tag {
+	color:#000;
+}
+.price-tag h2 {
+	font-size: 45px;
+	font-weight: 600;
+}
+.price-tag h2 span {
+  font-weight: 300;
+  font-size: 16px;
+  font-style: italic;
+}
+.price-item ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.price-item ul li {
+  font-size: 14px;
+  padding: 5px 0;
+  border-bottom: 1px dashed #fff;
+  margin: 5px 0;
+}
+.price-item ul li:last-child {
+  border-bottom: 0;
+}
+.single-price a {
+  margin-top: 15px;
+}
+.more-info-button{
+  background-color: #4361ee;
+  border-radius: 50px;
+  color: #fff;
+}
+.collapse p{
+
+}
+a.box-btn {
+	background-color: #F7254D;
+	padding: 5px 20px;
+	display: inline-block;
+	color: #fff;
+	text-transform: capitalize;
+	border-radius: 3px;
+	font-size: 15px;
+	transition: .3s;
+}
+a.box-btn:hover, a.border-btn:hover {
+	background-color: #4361ee;
+}
+
+ .clicker {
+    /* reproduced from https://stackoverflow.com/questions/6019845/show-hide-div-on-click-with-css */
+     background-color: blue;
+     outline:none;
+     cursor:pointer;
+}
+ .hiddendiv{
+     display:none;
+     height:200px;
+}
+ .clicker:focus + .hiddendiv{
+     display:block;
+     transition: all 1.5s;
+}
+ .category-select{
+     background-color: black;
+     display: block;
+     height: 20vh;
+     visibility: visible;
+}
+/*modal */
+ .modal label{
+     color: #fff;
+}
+ .modal-footer p{
+     color: #000;
+}
+ .login-text{
+   margin-top: 1vh;
+   margin-bottom: 10vh;
+}
+ .button-modal{
+     width: 26vh;
+     margin-top: 5vh;
+     border-radius: 60px;
+     background-color: #F7254D;
+     border-radius: 50px;
+     box-shadow: 20px 20px 60px #310a8b, -20px -20px 60px #430ebb;
+     color: #FFF;
+     font-size: 16pt;
+}
+.energy-list{
+  margin-top: 20vh;
+}
+ .energy-cards{
+     display: block;
+     color: #000;
+     margin-top: 5vh;
+}
+ .energy-card{
+     background-color: #fff;
+     border-radius: 25px;
+     box-shadow: 6px 6px 19px #191650, -6px -6px 19px #6558ff;
+}
+
+/* start compare section  - WHY NPOWER*/
+.whynpower-header-section{
+  background-image: url("../img/bg/family.jpg");
+ /* Figure 3. Nathan Dumalo. 2017. "Man in white shirt carrying girl in white shirt photo." Digital Photo. Unsplash. https://unsplash.com/photos/Wr3comVZJxU */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.stats{
+  margin-top: 20vh;
+}
+.whynpower-arrow{
+  margin-top: 28vh;
+
+}
+.stats h1{
+    font-size: 40pt;
+    margin-top: 10vh;
+    margin-bottom: 18vh;
+    text-align: center;
+    justify-content: center;
+}
+.statst-cards{
+    display: block;
+    color: #000;
+    margin-top: 10vh;
+    height: 5vh;
+}
+.stats-card{
+    background-color: #fff;
+    color: #000;
+    border-radius: 25px;
+    box-shadow: 6px 6px 19px #191650, -6px -6px 19px #6558ff;
+}
+.stats-card p{
+  font-size: 18pt;
+  text-align: center;
+}
+.stat-text{
+  text-decoration: underline;
+  font-size: 40pt;
+}
+.million{
+  font-size: 38pt;
+}
+.compare-section{
+  margin-top: 30vh;
+  background-color: #480ca8;
+}
+.compare-table{
+  margin-top: 20vh;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.npower-compare-row{
+  border-radius: 25px;
+  border-radius: 0px 25px 25px 0px;
+  color: #fff;
+}
+.competitor-compare-row{
+  border-radius: 25px;
+  border-radius: 0px 25px 25px 0px;
+  color: #fff;
+}
+.strive{
+  padding-top: 8vh;
+  text-align: center;
+  font-size: 18pt;
+}
+.join-team{
+}
+.button-last-whynpower{
+   /* check now! */
+    display: flex;
+    align-items: center;
+    width: 11vh;
+    margin-top: 19vh;
+    border-radius: 60px;
+    background-color: #F7254D;
+    box-shadow: -25px 25px 65px #362fab, 20px -20px 60px #483fe7;
+    color: #FFF;
+    font-size: 16pt;
+}
+/* end section 3 competitors */
+
+/*start CONNECT */
+.connect-header-section{
+  background-image: url("../img/bg/connect.jpg"); /* Figure 4. Adam Soloman. 2017. "White hello LED sign photo." Digital Photo. Unsplash. https://unsplash.com/@solomac */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.connect-arrow{
+  margin-top: 45vh;
+}
+.contact-section{
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  margin-top: -5vh;
+}
+.contact-section h2{
+  margin: auto;
+}
+.contact-cards{
+  background-color: #3a0ca3;
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+.contact-cards h1{
+  font-size: 25pt;
+  font-variant-caps: all-small-caps;
+  line-height: 1;
+  text-align: center;
+}
+.contact-cards{
+  height: 50vh;
+}
+.contact-cards a{
+  font-size: 16pt;
+  color: #fff;
+  text-decoration: underline;
+}
+.card-body-hover:hover{
+  background-color: #1C2759;
+}
+.button-call-back{
+  width: 18vh;
+  border-radius: 60px;
+  background-color: #F7254D;
+  color: #FFF;
+  font-size: 12pt;
+}
+/*start faq section*/
+.faq-section{
+  height: 90vh;
+}
+.faq-section h1{
+  margin-top: 0;
+}
+.wrapper{
+  width: 100%;
+  margin: 80px auto 0;
+}
+.wrapper .accordion_wrap .accordion_header{
+  width: 100%;
+  height: 6vh;
+  border-radius: 5px;
+  background: #F7254D;
+  color: #fff;
+  text-align: center;
+  font-size: 15pt;
+  border-bottom: 2px solid #fff;
+  position: relative;
+  cursor: pointer;
+}
+
+.wrapper .accordion_wrap:first-child .accordion_header{
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.wrapper .accordion_wrap:last-child .accordion_header{
+  border-bottom: 2px solid transparent;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.wrapper .accordion_wrap:last-child .accordion_header:hover{
+  border-bottom: 2px solid transparent;
+}
+
+.wrapper .accordion_wrap .accordion_header:before,
+.wrapper .accordion_wrap .accordion_header:after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  width: 20px;
+  height: 2px;
+  background: #3f37c9;
+}
+.wrapper .accordion_wrap .accordion_header:hover{
+  color: #01645d;
+  border-color: #01645d;
+}
+.wrapper .accordion_wrap .accordion_header:hover:before,
+.wrapper .accordion_wrap .accordion_header:hover:after{
+  background: #4361ee;
+}
+.wrapper .accordion_wrap .accordion_header:after{
+  transform: rotate(-90deg);
+  transition: all 0.5s ease;
+}
+.wrapper .accordion_wrap .accordion_body{
+  width: 100%;
+  height: 0px;
+  transition: all 0.5s ease;
+  background: #480ca8;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #480ca8;
+  box-shadow: inset 20px 20px 60px #3a0a88,
+              inset -20px -20px 60px #560ec8;
+}
+.wrapper .accordion_wrap .accordion_body p{
+  padding: 15px;
+  margin-top: 4vh;
+  width: 100%;
+  text-align: center;
+  font-size: 16pt;
+  line-height: 22px;
+  color: #fff;
+}
+.wrapper .accordion_wrap .accordion_body a{
+  text-decoration:  underline;
+  color: #fff;
+}
+.wrapper .accordion_wrap .accordion_header.active{
+  color: #3a0ca3;
+  border-color: #000;
+}
+
+.wrapper .accordion_wrap:last-child .accordion_header.active{
+  border-bottom: 2px solid #000;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.wrapper .accordion_wrap .accordion_header.active:before,
+.wrapper .accordion_wrap .accordion_header.active:after{
+  background: #480ca8;
+}
+
+.wrapper .accordion_wrap .accordion_header.active:after{
+  transform: rotate(0deg);
+}
+
+.wrapper .accordion_wrap .accordion_header.active + .accordion_body{
+  height: 180px;
+}
+
+.wrapper .accordion_wrap:last-child .accordion_header.active{
+  transform: rotate(0);
+}
+/*Coding Market. 2020. How to create the Animated Accordion Using HTML CSS and Jquery | CSS Accordion Menu. YouTube Video, 19:34. https://www.youtube.com/watch?v=4cH7fOk3kc4.*/
+
+/*end faq section*/
+.contact-form{
+  height: 65vh;
+}
+.contact-form h1{
+  padding-left: 10vh;
+  width: 30%;
+  z-index: 1;
+}
+.contact-form h3{
+  padding-left: 10vh;
+  padding-top: 3vh;
+  float: left;
+  width: 20%;
+  margin: auto;
+}
+.contact-card {
+    padding: 8%;
+    display: block;
+    background-color: #3a0ca3;
+}
+textarea[name="message"] {
+    resize: none;
+}
+#e-mail {
+    height: 45px;
+}
+#message {
+    height: 120px;
+}
+input.submit-button {
+    background-color: #F7254D;
+    color: #ffffff;
+}
+/* Omkar Bailkeri. 2021. "Bootstrap 4 Contact Us Form." BBBootsrap. https://bbbootstrap.com/snippets/contact-us-form-74769228 */
+/* end CONNECT */
+
+ .footer{
+    /* same on all pages */
+     padding: 0;
+     background-color: #202020 ;
+     margin-top: 20.9vh;
+     width: 100%;
+}
+ .footer a{
+     font-size: 10pt;
+}
+ .footer h5{
+     font-size: 12pt;
+     display: inline-block;
+     text-align: center;
+     justify-content: center;
+}
+ .footer ul{
+     text-align: center;
+     display: block;
+}
+ .footer-legal p{
+     display: block;
+     font-size: 8pt;
+     opacity: 0.8;
+     width: 100%;
+}
+ .newsletter{
+     margin-top: -1.5vh;
+     text-align: center;
+     padding: 0;
+     margin: auto;
+}
+ .submit-button{
+     background-color: #F7254D;
+     color: #fff;
+}
+ .col-7{
+     bottom: 200px;
+}
+/* end WHY NPOWER */
+
+ @media only screen and (max-width: 768px) {
+   body{
+     width: 100%;
+   }
+
+     .navbar a{
+         text-decoration: none;
+         text-align: left;
+         width: 50%;
+         font-size: 10pt;
+         color: #FFF;
+         line-height: 50px;
+    }
+     .header-top h1{
+         font-size: 30pt;
+         margin-top: 16vh;
+         display: flex;
+         float: left;
+    }
+     .down-arrow a{
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         width: 50%;
+         color: #fff;
+         margin-top: 20vh;
+    }
+     .sun-icon{
+         margin-top: 3vh;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         width: 50%;
+         align-content: center;
+    }
+    /* start section 2 */
+     .section2 h1{
+         display: block;
+         justify-content: center;
+         font-size: 30pt;
+         margin-top: 10vh;
+         margin-left: 12vh;
+         float: left;
+    }
+     .section2 h3{
+         margin-top: 25vh;
+         width: 100%;
+         line-height: 4vh;
+    }
+     .section2 p{
+         font-size: 10pt;
+         margin-top: 10vh;
+         margin-left: 12vh;
+         float: left;
+    }
+     .section2 ul{
+         margin-top: 5vh;
+         align-content: center;
+         list-style-type: none;
+         font-size: 15pt;
+    }
+     .section2 span{
+         font-size: 5vh;
+         top: 2vh;
+         text-decoration: none;
+    }
+     .button-2{
+        /* links to new page */
+         width: 26vh;
+         display: block;
+         align-items: center;
+         border-radius: 60px;
+         background-color: #F7254D;
+         box-shadow: -25px 25px 65px #362fab, 20px -20px 60px #483fe7;
+         color: #FFF;
+         margin-top: 5vh;
+         margin: 0;
+         padding: 0;
+         font-size: 16pt;
+    }
+}

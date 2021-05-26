@@ -1,0 +1,307 @@
+<!-- website created by: Rory Sargentson 2021. -->
+<!doctype html>
+<html lang=en>
+
+<head>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Npower-Campaign-Rory-Sargentson">
+    <link rel=icon href=img/np-brand/np-initials.png>
+    <!--Typeface-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!--Google Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--BS4 / JS-->
+    <link href=https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css rel=stylesheet integrity=sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6 crossorigin=anonymous>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src=https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js integrity=sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf crossorigin=anonymous></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--End BS4 / JS-->
+    <!--barba js -->
+    <!-- unpkg -->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <!-- jsdelivr -->
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <script src=js/snap-scroll.js></script>
+    <!--AOS-->
+    <link href="js/manifest.json" rel="manifest">
+    <link rel=stylesheet href=https://unpkg.com/aos@next/dist/aos.css/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--End AOS-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
+    <title>Npower</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/np-brand/np-logo.png" alt="Logo" style="width:10vh;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav container r-auto mt-2 mt-lg-0">
+                <li><a href="index.html" class="current">Home</a></li>
+                <li><a href="save-nrg.html">Save Energy</a></li>
+                <li><a href="whynpower.html">Why Npower</a></li>
+                <li><a href="contact.html">Connect</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="dropup-button">
+        <!-- chat bot button section -->
+        <button class="chatbot-btn btn btn-secondary dropup-toggle" style="width:10vh;" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="headset-icon material-icons">headset_mic</span>
+      </button>
+        <div class="dropdown-menu container-fluid">
+            <button class="dropdown-item" style="height:6vh;" type="button">Help Bot<img src="img/icon/question.png" class="chat-bot-icons" alt="chat" style="width:2vh;"></button>
+            <div class="dropdown-divider"></div>
+            <button class="dropdown-item" style="height:6vh;" type="button">Call Us<img src="img/icon/phone.png" class="chat-bot-icons" alt="phone" style="width:2vh;"></button>
+            <div class="dropdown-divider"></div>
+            <button class="dropdown-item" style="height:6vh;" type="button">Pay a Bill<img src="img/icon/credit-card.png" class="chat-bot-icons" alt="credit-card" style="width:2vh;"></button>
+        </div>
+    </div>
+
+    <main>
+        <header class="top-header-section">
+            <section class="section1 header-top">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <h1 data-aos="fade-right" data-aos-duration="900">With Npower, you hold the power<br> in your hands.</h1>
+                            <h2  data-aos="fade-right" data-aos-duration="1200">
+                              Household energy, made simple.
+                            </h2>
+                            <a class="button-top btn" href="save-nrg.html" role="button">check your eligibility now!</a>
+                        </div>
+                        <div class="col">
+                          
+                        </div>
+                    </div>
+                </div>
+                    <a href="#section2">
+                        <img src="img/icon/arrow-down.png" class="down-arrow justify-content-center" alt="down-arrow" style="width:5vh; height:5vh;" />
+                    </a>
+                    <!--down arrow-->
+            </section>
+        </header>
+
+        <!-- start section 2 -->
+        <section class="section2" id="section2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <h1 data-aos="fade-right" data-aos-duration="900">Who are we? We are <b>Npower</b>.</h1>
+
+                        <h3 data-aos="fade-right" data-aos-duration="1200">Currently the UK's leading energy company, <br /> and we want to show you why...</h3>
+                        <br />
+
+                    </div>
+                    <div class="container">
+                        <div class="row container">
+                            <div class="col-sm">
+                                <ul class="tick-ul">
+                                    <li data-aos="zoom-in-up" data-aos-duration="1500"><span data-aos="zoom-in-up" class="material-icons">check</span>Money & energy saving schemes for families</li>
+                                    <li data-aos="zoom-in-up" data-aos-duration="1700"><span class="material-icons">check</span>Discovering the right scheme through our eligibility checker</li>
+                                    <li data-aos="zoom-in-up" data-aos-duration="1900"><span class="material-icons">check</span>Loads of tips & tricks to help you save energy at home</li>
+                                </ul>
+                                <a class="discover-btn btn container-fluid" href="save-nrg.html" role="button">Discover your energy Scheme!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section 2 -->
+
+        <!-- start section 3 -->
+        <section class="section3 awards-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <h1 data-aos="fade-right" data-aos-duration="900">Awards.</h1><br />
+
+                        <h2>Because we're really good at what we do</h2>
+                        <br />
+                    </div>
+                    <div class="row">
+                        <div class="card-container col-sm-8 container">
+                            <div class="card-award text-center" style="width: 25rem;" data-aos="zoom-out-right" data-aos-duration="1500">
+                                <div class="card-body col-sm">
+                                    <h5 class="card-title"><span class="award-icon material-icons">emoji_events</span>2015 - 2020 Carbon Trust Standard.</h5>
+                                    <p class="card-text">Awarded for reaching our goal of reducing carbon emissions to 15%.</p>
+                                </div>
+                            </div>
+                            <div class="card-award text-center" style="width: 25rem;" data-aos="zoom-out-left" data-aos-duration="1500">
+                                <div class="card-body col-sm">
+                                    <h5 class="card-title"><span class="award-icon material-icons">emoji_events</span>2021 Operations & Practices Transparency.</h5>
+                                    <p class="card-text">Awarded for open transparency of our large & small operatons, whilst freely disclosing information to our customers.</p>
+                                </div>
+                            </div>
+                            <div class="card-award text-center" style="width: 25rem;" data-aos="zoom-out-right" data-aos-duration="1500">
+                                <div class="card-body col-sm">
+                                    <h5 class="card-title"><span class="award-icon material-icons">emoji_events</span>2020 Trees For Cities.</h5>
+                                    <p class="card-text">Awarded for planteding over 180,000 trees in suburban areas to increase a natural presence and the communities spirits.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section 3 -->
+
+        <!-- start section 4 -->
+        <section class="section4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <h1 data-aos="fade-right" data-aos-duration="900">Want to reduce the cost of your next bill?</h1>
+
+                        <p data-aos="fade-right" data-aos-duration="1200">A handful of loyal customers wish to find out more on how to apply for energy schemes, especially since there are tons of them out there.<br /> We aim to demistify the diverse variety and help <b>you</b> achive your goals, and make life at home a lot cheaper and easier. <br />
+                            <br /> You can find out what scheme is available for you by using our eligibility checker.
+                        </p>
+                        <br />
+                        <br />
+                        <a class="button-last btn container" href="save-nrg.html" role="button">check now!</a>
+                        <div class="icon-row row">
+                            <div class="col col-lg-2" data-aos="flip-up" data-aos-duration="1200">
+                                <img src="img/icon/idea.png" alt="Logo" style="width:5vh; padding-top:8vh;">
+                            </div>
+                            <div class="col col-lg-2" data-aos="flip-down" data-aos-duration="1500">
+                                <img src="img/icon/bolt.png" alt="Logo" style="width:5vh; padding-top:8vh;">
+                            </div>
+                            <div class="col col-lg-2" data-aos="flip-up" data-aos-duration="1900">
+                                <img src="img/icon/saving.png" alt="Logo" style="width:5vh; padding-top:8vh;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- start footer content -->
+        <footer class="footer text-center container-fluid">
+            <div class="container p-4">
+                <div class="row">
+
+                    <div class="newsletter justify-content-center">
+                        <form action="https://www.hertfordshiremercury.co.uk/news/hertfordshire-news/british-gas-npower-edf-one-5060954">
+                            <div class="row justify-content-center">
+
+                                <div class="col-md-5 col-12">
+                                    <div class="form-outline form-white mb-4">
+                                        <input type="email" id="email" class="form-control" placeholder="Sign up for our newsletter" />
+                                    </div>
+                                </div>
+
+                                <div class="col-auto">
+
+                                    <button type="submit" class="submit-button btn mb-4">
+                  Subscribe
+                </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-sm">
+                        <h5 class="text-uppercase">Privacy</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="https://www.npower.com/help-and-support/electricity-and-gas-tariffs/standards-of-conduct/" class="text-white">Standards of Conduct</a>
+                            </li>
+                            <li>
+                                <a href="https://www.npower.com/about-npower/privacy-policy/" class="text-white">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="https://www.npower.com/about-npower/cookies/" class="text-white">Cookies</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm">
+                        <h5 class="text-uppercase">Business</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="https://www.npower.com/npower-and-eon/" class="text-white">E.ON Updates</a>
+                            </li>
+                            <li>
+                                <a href="https://www.indeed.com/q-Enology-jobs.html" class="text-white">Careers</a>
+                            </li>
+                            <li>
+                                <a href="https://www.npower.com/business-solutions/" class="text-white">Business Solutions</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm">
+                        <h5 class="text-uppercase ">Website</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="https://www.npower.com/site-map/" class="text-white">Sitemap</a>
+                            </li>
+                            <li>
+                                <a href="https://www.npower.com/about-npower/accessibility/" class="text-white">Accessibility</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Credits</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--  <div class="footer-legal col-md">
+                            <h5 class=" text-uppercase">Legal</h5>
+                            <p>
+                              DIG32 A3 Website Author: Rory Sargentson. Curtin University, 2020.<br>
+                                This website has been created as part of an assignment in an approved course of study for Curtin University and contains copyright material not created by the author.
+                                All copyright material used remains copyright of the respective owners and has
+                                been used here pursuant to Section 40 of the Copyright Act 1968 (Commonwealth of Australia).
+                                No part of this work may be reproduced without consent of the original copyright owners.
+                                See code comments for references.
+                            </p>
+
+                        </div>-->
+                </div>
+
+            </div>
+
+        </footer>
+        <!-- MDBootstrap. 2021. "MDBootstrap footer generator". MDBootstrap. https://mdbootstrap.com/docs/standard/tools/builders/footer/? -->
+
+        <!-- end section 4 -->
+
+    </main>
+</body>
+<script>
+    // start animate on scroll
+      AOS.init();
+
+      barba.init({
+        // ...
+      })
+      // start snap scroll
+      //var snapScroll = $("header, section").SnapScroll({
+        //hashes:true
+      //});
+      //console.log(snapScroll);
+</script>
+
+</html>
+
+<!--DIG32 A3  "Npower brief" Website Author: Rory Sargentson. Curtin University, 2020.
+  This website has been created as part of an assignment in an approved course of study for Curtin University and contains copyright material not created by the author.
+  All copyright material used remains copyright of the respective owners and has
+  been used here pursuant to Section 40 of the Copyright Act 1968 (Commonwealth of Australia).
+  No part of this work may be reproduced without consent of the original copyright owners.
+  See code comments for references. -->
